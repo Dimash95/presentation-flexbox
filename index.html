@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>FLEXBOX</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/dracula.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>FLEXBOX</h1>
+          <h3>CSS FLEXIBLE BOX LAYOUT MODULE</h3>
+          <p>Presented by Amirov Dinmukhamed</p>
+        </section>
+
+        <section>
+          <h3>LAYOUT MODES</h3>
+          <ul>
+            <li>table layout</li>
+            <li>inline layout</li>
+            <li>block layout</li>
+            <li>positioned layout</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>FLEX LAYOUT SIMPLE AND POWERFUL</h3>
+          <ul>
+            <li>laid out in <strong>any flow direction</strong></li>
+            <li>display order <strong>reversed or rearranged</strong></li>
+            <li>
+              laid out along a
+              <strong>single (main) axis or wrapped</strong> into multiple lines
+              along a secondary (cross) axis
+            </li>
+            <li>
+              can <strong>“flex” their sizes</strong> to respond to the
+              available space
+            </li>
+            <li>
+              can be <strong>aligned</strong> with respect to their container or
+              each other
+            </li>
+            <li>
+              dynamically <strong>collapsed or uncollapsed</strong> along the
+              main axis while preserving the container’s cross size
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>BASICS - TERMINOLOGY</h3>
+          <img src="img/flexbox.png" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX CONTAINERS</h3>
+          <pre style="width: 500px"><code data-trim data-noescape
+            >display: flex;/* or inline-flex */</code
+          ></pre>
+        </section>
+
+        <section>
+          <h3>FLEX CONTAINERS</h3>
+          <pre
+            style="width: 800px"
+          ><code>flex-direction: row | row-reverse | column | column-reverse;</code></pre>
+          <pre
+            class="fragment"
+            style="width: 800px"
+          ><code>flex-wrap: nowrap | wrap | wrap-reverse;</code></pre>
+          <img src="img/flex-direction1.svg" alt="" />
+          <img class="fragment" src="img/flex-wrap.svg" alt="" />
+          <pre
+            class="fragment"
+            style="width: 620px"
+          ><code>flex-flow: <‘flex-direction’> || <‘flex-wrap’></code></pre>
+        </section>
+
+        <section>
+          <h3>FLEX CONTAINERS</h3>
+          <pre
+            style="width: 1060px"
+          ><code>justify-content: flex-start | flex-end | center | space-between | space-around;</code></pre>
+          <img src="img/justify-content.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX CONTAINERS</h3>
+          <pre
+            style="width: 1200px"
+          ><code>align-content: flex-start | flex-end | center | space-between | space-around | stretch;</code></pre>
+          <img src="img/align-content.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX CONTAINERS</h3>
+          <pre><code>align-items: flex-start | flex-end | center | baseline | stretch;</code></pre>
+          <img src="img/align-items.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX ITEMS</h3>
+          <pre style="width: 300px"><code>order: <'integer'>;</code></pre>
+          <img src="img/order.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX ITEMS</h3>
+          <pre style="width: 300px"><code>flex-grow: <'number'>;</code></pre>
+          <img src="img/flex-grow.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX ITEMS</h3>
+          <pre style="width: 900px"><code>flex-shrink: <'number'>;
+flex-basis: <'length'> | auto;
+flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]</code></pre>
+          <img src="img/flex-grow.svg" alt="" />
+          <img src="img/rel-vs-abs-flex.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>FLEX ITEMS</h3>
+          <pre
+            style="width: 1000px"
+          ><code>align-self: auto | flex-start | flex-end | center | baseline | stretch;</code></pre>
+          <img src="img/align-self.svg" alt="" />
+        </section>
+
+        <section>
+          <h3>BROWSER SUPPORT</h3>
+          <p>can i use?</p>
+          <pre style="width: 300px"><code>display: flexbox ;</code></pre>
+          <strong>Draff syntax from 2011: support IE10</strong>
+        </section>
+
+        <section>
+          <h3>Solved by Flexbox</h3>
+          <ul>
+            <li>
+              <a href="https://codepen.io/phamtrang/pen/BaqBVV"
+                >Vertical Centering</a
+              >
+            </li>
+            <li>
+              <a href="https://codepen.io/phamtrang/pen/GRPKmZ"
+                >Better, Simpler Grid Systems</a
+              >
+            </li>
+            <li>
+              <a href="https://codepen.io/phamtrang/pen/mdQZQK"
+                >The Media Object</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>REFERENCE</h3>
+          <ul>
+            <li>
+              <a href="http://www.w3.org/TR/css3-flexbox"
+                >http://www.w3.org/TR/css3-flexbox</a
+              >
+            </li>
+            <li>
+              <a href="http://css-tricks.com/snippets/css/a-guide-to-flexbox/">
+                http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+              </a>
+            </li>
+            <li>
+              <a href="http://philipwalton.github.io/solved-by-flexbox/"
+                >http://philipwalton.github.io/solved-by-flexbox/</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
